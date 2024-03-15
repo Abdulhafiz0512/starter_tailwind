@@ -9,7 +9,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
-    <button class="uppercase">Hi</button>
+
+  
+<body class="bg-gray-200 p-4">
+
+  <!-- Flexbox Example -->
+  <div class="relative bg-white p-4 rounded-lg shadow-lg mb-4">
+    <div class="flex justify-between">
+      <div class="flex-grow-0 flex-shrink-0 w-1/3 p-4 bg-blue-200 rounded-lg mr-4">
+        Flex Item 1
+      </div>
+      
+      <div class="flex-grow flex-shrink-0 w-1/3 p-4 bg-green-200 rounded-lg mr-4">
+        Flex Item 2
+      </div>
+      <div class="flex-grow-0 flex-shrink-0 w-1/3 p-4 bg-yellow-200 rounded-lg">
+        Flex Item 3
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid Example -->
+  <div class="grid grid-cols-3 gap-4">
+    <div class="p-4 bg-blue-200 rounded-lg shadow-lg grid-item">
+      Grid Item 1<br>(Content)
+    </div>
+    <div class="p-4 bg-green-200 rounded-lg shadow-lg grid-item">
+      Grid Item 2<br>(Content)
+    </div>
+    <div class="p-4 bg-yellow-200 rounded-lg shadow-lg grid-item">
+      Grid Item 3<br>(Content)
+    </div>
+    <div class="p-4 bg-red-200 rounded-lg shadow-lg grid-item" style="grid-area: footer;">
+      Grid Item 4<br>(Content)
+    </div>
+    <div class="p-4 bg-purple-200 rounded-lg shadow-lg grid-item col-span-2">
+      Grid Item 5<br>(Content)<br>Column Span 2
+    </div>
+    <div class="p-4 bg-indigo-200 rounded-lg shadow-lg grid-item row-span-2">
+      Grid Item 6<br>(Content)<br>Row Span 2
+    </div>
+  </div>
+
 </body>
 </html>
+
